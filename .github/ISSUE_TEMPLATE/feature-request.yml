@@ -1,0 +1,26 @@
+name: 提需求
+description: 说明你希望 PrintPet 帮你完成的事
+title: "[需求] "
+labels: [enhancement]
+assignees: [ericwubeta]
+body:
+  - type: dropdown
+    id: product
+    attributes:
+      label: 产品
+      options:
+        - Windows 桌面版
+        - PrintPet Core
+        - PrintPet Spirit
+        - PrintPet Kindle
+        - PrintPet 官网
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: 你想解决什么问题
+      description: 说说使用场景、目前卡在哪里，以及希望 PrintPet 做什么。
+    validations:
+      required: true
